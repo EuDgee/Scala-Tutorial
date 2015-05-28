@@ -7,7 +7,7 @@ class JustScalaSpec extends FlatSpec {
     assert((for (i <- List.range(0, 2)) yield i) == 0 :: 1 :: Nil)
   }
 
-  "For" should "filter out by if preficate" in {
+  "For" should "filter out by if predicate" in {
     assert((for (i <- List.range(0, 10) if i % 2 == 0) yield i) == 0 :: 2 :: 4 :: 6 :: 8 :: Nil)
   }
 
