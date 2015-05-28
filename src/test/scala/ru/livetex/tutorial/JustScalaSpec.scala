@@ -39,10 +39,10 @@ class JustScalaSpec extends FlatSpec {
   }
 
   "Tuples" should "be cool" in {
-    val a = (1, 2)
-    //assert(a._1 == 1)
+    val a = (3, 2)
+    //assert(a._1 == 3)
     val (first, _) = a
-    assert(first == 1)
+    assert(first == 3)
   }
 
   "Collections" should "be awesome" in {
